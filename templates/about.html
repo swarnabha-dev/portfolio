@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Swarnabha Halder</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .navbar-custom {
+      background-color: #ff6347; /* Your desired navbar color */
+    }
+    .footer {
+      width: 100%;
+      height: 100px; /* Adjust the value based on your footer height */
+      background-color: #343a40; /* Adjust the background color of your footer */
+      color: #fff; /* Adjust the text color of your footer */
+    }
+    .content {
+      min-height: calc(100vh - 150px); /* Subtract footer height and header height from viewport height */
+      display: flex;
+      flex-direction: column;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <img src="{{ url_for('static',filename='s.png')}}" alt="BOOTSTRAP" width="60" height="60">
+          Swarnabha Halder</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Home<span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/projects">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact">Contact Me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- /Navbar -->
+  </header>
+
+  <!-- Content -->
+  <div class="content">
+    <!-- About Me -->
+    <section class="container mt-5">
+      <div class="row">
+        <div class="col-lg-8">
+          <h2>About Me</h2>
+          <p>I'm a passionate developer with expertise in web development and programming. I love creating innovative solutions and exploring new technologies to enhance user experiences.</p>
+          <p>My journey began with a strong curiosity for coding and problem-solving. Over the years, I have honed my skills in HTML, CSS, JavaScript, Python, and various frameworks such as Django and React.</p>
+          <p>Currently, I'm focusing on building scalable web applications, learning machine learning concepts, and contributing to open-source projects. My goal is to make a positive impact through technology and continuous learning.</p>
+          <p>Contact me:</p>
+          <ul>
+            <li>Email: swarnabhahalder80137@gmail.com</li>
+            <li>Phone: +1234567890</li>
+            <li>Location: Kolkata, India</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- /About Me -->
+
+    <!-- GitHub Profile -->
+    <section class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-auto">
+          <a href="https://github.com/swarnabha-dev" target="_blank" rel="noreferrer">
+            <img src="{{ url_for('static',filename='github.png')}}" alt="Github" width="60" height="60">
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- /GitHub Profile -->
+  </div>
+  <!-- /Content -->
+
+  <!-- Footer -->
+  <footer class="footer mt-auto text-center py-4">
+    <p>&copy; 2024 Swarnabha Halder. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS Bundle (Popper included) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
